@@ -1,0 +1,10 @@
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\bin\Debug\StudentScoreManageSystem.exe.config
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\bin\Debug\StudentScoreManageSystem.exe
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\bin\Debug\StudentScoreManageSystem.pdb
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.csprojAssemblyReference.cache
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.Login.resources
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.Properties.Resources.resources
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.csproj.GenerateResource.cache
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.csproj.CoreCompileInputs.cache
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.exe
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.pdb
