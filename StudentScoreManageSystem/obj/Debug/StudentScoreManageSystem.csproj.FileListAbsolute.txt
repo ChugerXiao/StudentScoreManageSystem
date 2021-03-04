@@ -8,3 +8,4 @@ E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScore
 E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.csproj.CoreCompileInputs.cache
 E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.exe
 E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.pdb
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.SignUp.resources

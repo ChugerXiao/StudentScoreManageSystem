@@ -62,7 +62,6 @@ namespace StudentScoreManageSystem
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(176, 28);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "教师";
             // 
             // label2
             // 
@@ -107,6 +106,7 @@ namespace StudentScoreManageSystem
             this.textBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox2.Location = new System.Drawing.Point(244, 246);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(176, 30);
             this.textBox2.TabIndex = 3;
             // 
@@ -147,7 +147,7 @@ namespace StudentScoreManageSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 433);
+            this.ClientSize = new System.Drawing.Size(622, 433);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
@@ -158,8 +158,10 @@ namespace StudentScoreManageSystem
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(640, 480);
+            this.MinimumSize = new System.Drawing.Size(640, 480);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "学生成绩管理系统";
             this.ResumeLayout(false);
             this.PerformLayout();
 
