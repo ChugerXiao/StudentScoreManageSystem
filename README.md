@@ -7,5 +7,6 @@ StudentScoreManageSystem
 
 ## BUG
 
-- [ ] `users.info`换行符的问题。
+- [x] `users.info`换行符的问题。
 - [x] `throw`函数
+
