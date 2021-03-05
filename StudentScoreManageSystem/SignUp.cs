@@ -44,6 +44,11 @@ namespace StudentScoreManageSystem
                 MessageBox.Show("请输入账号！");
                 return;
             }
+            if (label8.Text != "")
+            {
+                MessageBox.Show("该账号已被注册！");
+                return;
+            }
             if (textBox3.Text == "")
             {
                 MessageBox.Show("请输入密码！");
@@ -64,6 +69,35 @@ namespace StudentScoreManageSystem
             Form login = new Login();
             login.Show();
             Dispose(false);
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                label8.Text = "";
+                StreamReader sr = new StreamReader("users.info");
+                string usersInfo = sr.ReadToEnd();
+                sr.Close();
+                string[] persons = usersInfo.Split('\n');
+                foreach (string info in persons)
+                {
+                    string[] person = info.Split(' ');
+                    if (person[3] == textBox2.Text)
+                    {
+                        label8.Text = "该账号已被注册！";
+                        return;
+                    }
+                }
+            }
+            catch (IOException)
+            {
+                return;
+            }
+            catch (IndexOutOfRangeException)
+            {
+                return;
+            }
         }
     }
 }

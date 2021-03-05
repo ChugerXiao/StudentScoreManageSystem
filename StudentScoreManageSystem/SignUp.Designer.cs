@@ -44,6 +44,7 @@ namespace StudentScoreManageSystem
             this.button2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -113,6 +114,7 @@ namespace StudentScoreManageSystem
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(175, 30);
             this.textBox2.TabIndex = 6;
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // comboBox2
             // 
@@ -203,11 +205,21 @@ namespace StudentScoreManageSystem
             this.textBox4.Size = new System.Drawing.Size(175, 30);
             this.textBox4.TabIndex = 9;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(211, 301);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 15);
+            this.label8.TabIndex = 12;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 523);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
@@ -249,5 +261,6 @@ namespace StudentScoreManageSystem
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label8;
     }
 }

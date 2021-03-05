@@ -8,4 +8,4 @@ StudentScoreManageSystem
 ## BUG
 
 - [ ] `users.info`换行符的问题。
-- [ ] `throw`函数
+- [x] `throw`函数
