@@ -8,62 +8,99 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Data.OleDb;
 
 namespace StudentScoreManageSystem
 {
     public partial class Login : Form
     {
+        OleDbConnection connection = new OleDbConnection();
         public Login()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=usersInfo.accdb;Persist Security Info=False;";
             comboBox1.SelectedIndex = 0;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private bool allFilled()
         {
             if (textBox1.Text == "")
             {
                 MessageBox.Show("请输入账号！");
-                return;
+                return false;
             }
             if (textBox2.Text == "")
             {
                 MessageBox.Show("请输入密码！");
-                return;
+                return false;
             }
-            string identity = comboBox1.SelectedItem.ToString();
+            return true;
+        }
+
+        public string getTable()
+        {
+            string table;
+            switch (comboBox1.SelectedItem.ToString())
+            {
+                case "教师":
+                    {
+                        table = "teaLogin";
+                        break;
+                    }
+                case "学生":
+                    {
+                        table = "stuLogin";
+                        break;
+                    }
+                default:
+                    { 
+                        table = "";
+                        break;
+                    }
+            }
+            return table;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!allFilled())
+                return;
             try
             {
-                // users.info format -> 教师 张三 高三（1） zhangsan 123456 \n
-                StreamReader sr = new StreamReader("users.info");
-                string usersInfo = sr.ReadToEnd();
-                sr.Close();
-                string[] persons = usersInfo.Split('\n');
-                foreach (string info in persons)
-                {
-                    string[] personInfo = info.Split(' ');
-                    if (personInfo[0] == identity && personInfo[3] == textBox1.Text)
-                    {
-                        if (personInfo[4] == textBox2.Text)
-                        {
-                            MessageBox.Show("登录成功！");
-                            // Goto => 管理界面
-                            Dispose(false);
-                        }
-                        else
-                        {
-                            throw new IOException();
-                        }
-                    }
-                }
-                throw new IOException();
+                connection.Open();
             }
-            catch (IOException)
+            catch(Exception ex)
             {
-                MessageBox.Show("账号或密码错误！");
+                MessageBox.Show("数据库连接错误！\n\n" + ex);
+                Dispose();
             }
-                
-            
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = connection;
+            command.CommandText = "SELECT password FROM " + getTable() + " WHERE username='" + textBox1.Text + "'";
+            OleDbDataReader reader = command.ExecuteReader();
+            bool exist = reader.Read();
+            if (exist)
+            {
+                if (textBox2.Text == reader.GetString(0))
+                {
+                    MessageBox.Show("登录成功！");
+                    // Goto => 管理界面
+                    Dispose(false);
+                }
+                else
+                {
+                    textBox2.Clear();
+                    MessageBox.Show("密码错误！");
+                }
+            }
+            else
+            {
+                textBox1.Clear();
+                textBox2.Clear();
+                MessageBox.Show("用户名错误！");
+            }
+            reader.Close();
+            connection.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -78,6 +115,6 @@ namespace StudentScoreManageSystem
             Dispose();
         }
 
-        
+
     }
 }

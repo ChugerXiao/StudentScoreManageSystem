@@ -1,4 +1,4 @@
-## 学生成绩管理系统
+## `学生成绩管理系统
 StudentScoreManageSystem
 
 ---
@@ -8,5 +8,26 @@ StudentScoreManageSystem
 ## BUG
 
 - [x] `users.info`换行符的问题。
-- [x] `throw`函数
+- [x] `throw`函数。
+- [ ] `close()`和`dispose()`的区别。
+- [ ] `comboBox`只读
+- [x] 跨文件调用
+
+## 管理系统UI
+
+用彩块。
+
+> ### 学生
+>
+> - 基本信息
+> - 成绩查询
+> - 教师查询
+> - 班级查询
+
+> ### 教师
+>
+> + 基本信息
+> + 成绩查询
+> + 成绩提交
+> + 学生查询
 

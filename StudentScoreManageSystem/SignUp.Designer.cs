@@ -46,6 +46,8 @@ namespace StudentScoreManageSystem
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +64,7 @@ namespace StudentScoreManageSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(98, 111);
+            this.label2.Location = new System.Drawing.Point(98, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 1;
@@ -72,7 +74,7 @@ namespace StudentScoreManageSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(98, 164);
+            this.label3.Location = new System.Drawing.Point(98, 214);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 2;
@@ -82,7 +84,7 @@ namespace StudentScoreManageSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(98, 217);
+            this.label4.Location = new System.Drawing.Point(98, 265);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 3;
@@ -103,7 +105,7 @@ namespace StudentScoreManageSystem
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(208, 160);
+            this.textBox1.Location = new System.Drawing.Point(208, 210);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(175, 30);
             this.textBox1.TabIndex = 5;
@@ -111,11 +113,10 @@ namespace StudentScoreManageSystem
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox2.Location = new System.Drawing.Point(208, 266);
+            this.textBox2.Location = new System.Drawing.Point(208, 312);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(175, 30);
             this.textBox2.TabIndex = 6;
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // comboBox2
             // 
@@ -131,7 +132,7 @@ namespace StudentScoreManageSystem
             "高三（1）",
             "高三（2）",
             "高三（3）"});
-            this.comboBox2.Location = new System.Drawing.Point(208, 214);
+            this.comboBox2.Location = new System.Drawing.Point(208, 262);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(175, 28);
             this.comboBox2.TabIndex = 4;
@@ -140,7 +141,7 @@ namespace StudentScoreManageSystem
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(98, 270);
+            this.label5.Location = new System.Drawing.Point(98, 316);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 20);
             this.label5.TabIndex = 7;
@@ -150,7 +151,7 @@ namespace StudentScoreManageSystem
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(98, 323);
+            this.label6.Location = new System.Drawing.Point(98, 367);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 20);
             this.label6.TabIndex = 8;
@@ -159,7 +160,7 @@ namespace StudentScoreManageSystem
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox3.Location = new System.Drawing.Point(208, 320);
+            this.textBox3.Location = new System.Drawing.Point(208, 364);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(175, 30);
@@ -168,7 +169,7 @@ namespace StudentScoreManageSystem
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(117, 443);
+            this.button1.Location = new System.Drawing.Point(117, 485);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 30);
             this.button1.TabIndex = 10;
@@ -179,7 +180,7 @@ namespace StudentScoreManageSystem
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(259, 443);
+            this.button2.Location = new System.Drawing.Point(259, 485);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 30);
             this.button2.TabIndex = 11;
@@ -191,7 +192,7 @@ namespace StudentScoreManageSystem
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(98, 376);
+            this.label7.Location = new System.Drawing.Point(98, 418);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 20);
             this.label7.TabIndex = 8;
@@ -200,7 +201,7 @@ namespace StudentScoreManageSystem
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox4.Location = new System.Drawing.Point(208, 374);
+            this.textBox4.Location = new System.Drawing.Point(208, 416);
             this.textBox4.Name = "textBox4";
             this.textBox4.PasswordChar = '*';
             this.textBox4.Size = new System.Drawing.Size(175, 30);
@@ -215,11 +216,29 @@ namespace StudentScoreManageSystem
             this.label8.Size = new System.Drawing.Size(0, 15);
             this.label8.TabIndex = 12;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(98, 163);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 20);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "学号";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox5.Location = new System.Drawing.Point(208, 158);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(175, 30);
+            this.textBox5.TabIndex = 5;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 523);
+            this.ClientSize = new System.Drawing.Size(472, 553);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -229,16 +248,18 @@ namespace StudentScoreManageSystem
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(490, 570);
-            this.MinimumSize = new System.Drawing.Size(490, 570);
+            this.MaximumSize = new System.Drawing.Size(490, 600);
+            this.MinimumSize = new System.Drawing.Size(490, 600);
             this.Name = "SignUp";
             this.Text = "注册";
             this.ResumeLayout(false);
@@ -264,5 +285,7 @@ namespace StudentScoreManageSystem
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
