@@ -100,7 +100,7 @@ namespace StudentScoreManageSystem
             this.comboBox1.Location = new System.Drawing.Point(208, 108);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(175, 28);
-            this.comboBox1.TabIndex = 4;
+            this.comboBox1.TabIndex = 0;
             // 
             // textBox1
             // 
@@ -108,7 +108,7 @@ namespace StudentScoreManageSystem
             this.textBox1.Location = new System.Drawing.Point(208, 210);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(175, 30);
-            this.textBox1.TabIndex = 5;
+            this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
@@ -116,7 +116,7 @@ namespace StudentScoreManageSystem
             this.textBox2.Location = new System.Drawing.Point(208, 312);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(175, 30);
-            this.textBox2.TabIndex = 6;
+            this.textBox2.TabIndex = 4;
             // 
             // comboBox2
             // 
@@ -125,17 +125,14 @@ namespace StudentScoreManageSystem
             this.comboBox2.Items.AddRange(new object[] {
             "高一（1）",
             "高一（2）",
-            "高一（3）",
             "高二（1）",
             "高二（2）",
-            "高二（3）",
             "高三（1）",
-            "高三（2）",
-            "高三（3）"});
+            "高三（2）"});
             this.comboBox2.Location = new System.Drawing.Point(208, 262);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(175, 28);
-            this.comboBox2.TabIndex = 4;
+            this.comboBox2.TabIndex = 3;
             // 
             // label5
             // 
@@ -164,7 +161,7 @@ namespace StudentScoreManageSystem
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(175, 30);
-            this.textBox3.TabIndex = 9;
+            this.textBox3.TabIndex = 5;
             // 
             // button1
             // 
@@ -172,7 +169,7 @@ namespace StudentScoreManageSystem
             this.button1.Location = new System.Drawing.Point(117, 485);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 30);
-            this.button1.TabIndex = 10;
+            this.button1.TabIndex = 7;
             this.button1.Text = "注册";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -183,7 +180,7 @@ namespace StudentScoreManageSystem
             this.button2.Location = new System.Drawing.Point(259, 485);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 30);
-            this.button2.TabIndex = 11;
+            this.button2.TabIndex = 8;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -205,7 +202,7 @@ namespace StudentScoreManageSystem
             this.textBox4.Name = "textBox4";
             this.textBox4.PasswordChar = '*';
             this.textBox4.Size = new System.Drawing.Size(175, 30);
-            this.textBox4.TabIndex = 9;
+            this.textBox4.TabIndex = 6;
             // 
             // label8
             // 
@@ -232,7 +229,7 @@ namespace StudentScoreManageSystem
             this.textBox5.Location = new System.Drawing.Point(208, 158);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(175, 30);
-            this.textBox5.TabIndex = 5;
+            this.textBox5.TabIndex = 1;
             // 
             // SignUp
             // 

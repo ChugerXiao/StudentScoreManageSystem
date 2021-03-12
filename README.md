@@ -1,4 +1,4 @@
-## `学生成绩管理系统
+## 学生成绩管理系统
 StudentScoreManageSystem
 
 ---
@@ -21,8 +21,8 @@ StudentScoreManageSystem
 >
 > - 基本信息
 > - 成绩查询
-> - 教师查询
-> - 班级查询
+> - 教师信息
+> - 班级信息
 
 > ### 教师
 >

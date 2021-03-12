@@ -46,6 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseMessage.Designer.cs">
+      <DependentUpon>BaseMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassMessage.Designer.cs">
+      <DependentUpon>ClassMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandUpScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandUpScore.Designer.cs">
+      <DependentUpon>HandUpScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherMessage.Designer.cs">
+      <DependentUpon>TeacherMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectScore.Designer.cs">
+      <DependentUpon>SelectScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentConsole.Designer.cs">
+      <DependentUpon>StudentConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherConsole.Designer.cs">
+      <DependentUpon>TeacherConsole.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +102,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseMessage.resx">
+      <DependentUpon>BaseMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassMessage.resx">
+      <DependentUpon>ClassMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandUpScore.resx">
+      <DependentUpon>HandUpScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectScore.resx">
+      <DependentUpon>SelectScore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,9 +125,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentConsole.resx">
+      <DependentUpon>StudentConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherConsole.resx">
+      <DependentUpon>TeacherConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherMessage.resx">
+      <DependentUpon>TeacherMessage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

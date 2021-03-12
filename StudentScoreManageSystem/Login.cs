@@ -76,7 +76,7 @@ namespace StudentScoreManageSystem
             }
             OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
-            command.CommandText = "SELECT password FROM " + getTable() + " WHERE username='" + textBox1.Text + "'";
+            command.CommandText = "SELECT password, id FROM " + getTable() + " WHERE username='" + textBox1.Text + "'";
             OleDbDataReader reader = command.ExecuteReader();
             bool exist = reader.Read();
             if (exist)
@@ -84,7 +84,16 @@ namespace StudentScoreManageSystem
                 if (textBox2.Text == reader.GetString(0))
                 {
                     MessageBox.Show("登录成功！");
-                    // Goto => 管理界面
+                    if (comboBox1.SelectedItem.ToString() == "教师")
+                    {
+                        Form manageConsole = new TeacherConsole(reader.GetString(1));
+                        manageConsole.Show();
+                    }
+                    else
+                    {
+                        Form manageConsole = new StudentConsole(reader.GetString(1));
+                        manageConsole.Show();
+                    }
                     Dispose(false);
                 }
                 else

@@ -155,7 +155,7 @@ namespace StudentScoreManageSystem
             if (!allFilled())
                 return;
             string sql;
-            sql = "SELECT * FROM " + getTable() + " WHERE id = " + textBox5.Text;
+            sql = "SELECT * FROM " + getTable() + " WHERE id = '" + textBox5.Text + "'";
             if (QuerySQL(sql) != null)
             {
                 MessageBox.Show("id(" + textBox5.Text + ")已被注册。");
@@ -169,7 +169,7 @@ namespace StudentScoreManageSystem
                 textBox2.Clear();
                 return;
             }
-            sql = "INSERT INTO " + getTable() + "(fullName, class, username, password, id) VALUES ('" + textBox1.Text.Trim() + "', '" + comboBox2.Text.Trim() + "', '" + textBox2.Text.Trim() + "', '" + textBox3.Text.Trim() + "', " + textBox5.Text.Trim() + ")";
+            sql = "INSERT INTO " + getTable() + "(fullName, class, username, [password], id) VALUES ('" + textBox1.Text.Trim() + "', '" + comboBox2.Text.Trim() + "', '" + textBox2.Text.Trim() + "', '" + textBox3.Text.Trim() + "', '" + textBox5.Text.Trim() + "')";
             ExecuteSQL(sql);
             MessageBox.Show("注册成功！");
             Form Login = new Login();

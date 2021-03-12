@@ -10,3 +10,10 @@ E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScore
 E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.pdb
 E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.SignUp.resources
 E:\code\StudentScoreManageSystem\StudentScoreManageSystem\bin\Debug\usersInfo.accdb
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.TeacherConsole.resources
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.BaseMessage.resources
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.StudentConsole.resources
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.SelectScore.resources
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.TeacherMessage.resources
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.ClassMessage.resources
+E:\code\StudentScoreManageSystem\StudentScoreManageSystem\obj\Debug\StudentScoreManageSystem.HandUpScore.resources
