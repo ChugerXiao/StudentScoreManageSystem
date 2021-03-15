@@ -56,12 +56,12 @@ namespace StudentScoreManageSystem
                 Dispose();
             }
             string sql;
-            sql = "SELECT stuLogin.id, stuLogin.fullName FROM teaLogin INNER JOIN stuLogin ON teaLogin.class = stuLogin.class WHERE teaLogin.id='" + mid + "'";
+            sql = "SELECT stuLogin.id as 学号, stuLogin.fullName as 姓名 FROM teaLogin INNER JOIN stuLogin ON teaLogin.class = stuLogin.class WHERE teaLogin.id='" + mid + "'";
             OleDbDataAdapter adapter = new OleDbDataAdapter(sql, connection);
             dataSet = new DataSet();
             adapter.Fill(dataSet);
             DataTable table = dataSet.Tables[0];
-            table.Columns.Add("score");
+            table.Columns.Add("成绩");
             dataGridView1.DataSource = table;
             dataGridView1.Columns[0].ReadOnly = true;
             dataGridView1.Columns[1].ReadOnly = true;

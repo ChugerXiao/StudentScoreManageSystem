@@ -42,6 +42,7 @@ namespace StudentScoreManageSystem
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 183);
             this.dataGridView1.Name = "dataGridView1";
@@ -79,7 +80,7 @@ namespace StudentScoreManageSystem
             "性别",
             "年龄",
             "党员否",
-            "家庭住址"});
+            "住址"});
             this.comboBox1.Location = new System.Drawing.Point(366, 53);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(226, 28);
