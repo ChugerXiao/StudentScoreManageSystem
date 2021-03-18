@@ -111,7 +111,7 @@ namespace StudentScoreManageSystem
             this.MaximumSize = new System.Drawing.Size(1000, 680);
             this.MinimumSize = new System.Drawing.Size(1000, 680);
             this.Name = "ClassMessage";
-            this.Text = "我的班级";
+            this.Text = "我的部门";
             this.Load += new System.EventHandler(this.ClassMessage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

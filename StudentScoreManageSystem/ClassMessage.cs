@@ -60,12 +60,12 @@ namespace StudentScoreManageSystem
                 command.CommandText = "SELECT class FROM stuLogin WHERE id='" + mid + "'";
                 OleDbDataReader reader = command.ExecuteReader();
                 reader.Read();
-                sql = "SELECT stuLogin.id as 学号, fullName as 姓名, class as 班级, sex as 性别, yearOld as 年龄, partyOrNot as 党员否, address as 住址, phone as 电话 FROM student INNER JOIN stuLogin ON student.id = stuLogin.id WHERE stuLogin.class='" + reader.GetString(0).ToString() + "'";
+                sql = "SELECT stuLogin.id as 工号, fullName as 姓名, class as 部门, sex as 性别, yearOld as 年龄, partyOrNot as 党员否, address as 住址, phone as 电话 FROM student INNER JOIN stuLogin ON student.id = stuLogin.id WHERE stuLogin.class='" + reader.GetString(0).ToString() + "'";
                 reader.Close();
             }
             else
             {
-                sql = "SELECT stuLogin.id as 教工号, stuLogin.fullName as 姓名, stuLogin.class as 班级, sex as 性别, yearOld as 年龄, partyOrNot as 党员否, address as 住址, phone as 电话 FROM teaLogin INNER JOIN (student INNER JOIN stuLogin ON student.id = stuLogin.id) ON teaLogin.class = stuLogin.class WHERE teaLogin.id='" + mid + "'";
+                sql = "SELECT stuLogin.id as 工号, stuLogin.fullName as 姓名, stuLogin.class as 部门, sex as 性别, yearOld as 年龄, partyOrNot as 党员否, address as 住址, phone as 电话 FROM teaLogin INNER JOIN (student INNER JOIN stuLogin ON student.id = stuLogin.id) ON teaLogin.class = stuLogin.class WHERE teaLogin.id='" + mid + "'";
             }
             OleDbDataAdapter adapter = new OleDbDataAdapter(sql, connection);
             dataSet = new DataSet();

@@ -111,7 +111,7 @@ namespace StudentScoreManageSystem
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "科目";
+            this.label4.Text = "部门";
             // 
             // textBox4
             // 
@@ -181,7 +181,7 @@ namespace StudentScoreManageSystem
             this.groupBox1.Size = new System.Drawing.Size(418, 422);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "教师信息";
+            this.groupBox1.Text = "主任信息";
             // 
             // TeacherMessage
             // 
@@ -195,7 +195,7 @@ namespace StudentScoreManageSystem
             this.MaximumSize = new System.Drawing.Size(460, 550);
             this.MinimumSize = new System.Drawing.Size(460, 550);
             this.Name = "TeacherMessage";
-            this.Text = "教师信息";
+            this.Text = "主任信息";
             this.Load += new System.EventHandler(this.TeacherMessage_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

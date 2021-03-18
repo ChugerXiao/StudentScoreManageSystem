@@ -88,15 +88,15 @@ namespace StudentScoreManageSystem
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "班级";
+            this.label4.Text = "部门";
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "教师",
-            "学生"});
+            "主任",
+            "员工"});
             this.comboBox1.Location = new System.Drawing.Point(208, 108);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(175, 28);
@@ -123,12 +123,12 @@ namespace StudentScoreManageSystem
             this.comboBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "高一（1）",
-            "高一（2）",
-            "高二（1）",
-            "高二（2）",
-            "高三（1）",
-            "高三（2）"});
+            "市场营销",
+            "人力资源",
+            "综合行政",
+            "资本财务",
+            "产品研发",
+            "生产服务"});
             this.comboBox2.Location = new System.Drawing.Point(208, 262);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(175, 28);
@@ -221,7 +221,7 @@ namespace StudentScoreManageSystem
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 20);
             this.label9.TabIndex = 1;
-            this.label9.Text = "学号";
+            this.label9.Text = "工号";
             // 
             // textBox5
             // 

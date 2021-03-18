@@ -32,14 +32,14 @@ namespace StudentScoreManageSystem
         {
             if (textBox5.Text == "")
             {
-                MessageBox.Show("请输入学号！");
+                MessageBox.Show("请输入工号！");
                 return false;
             }
-            if (comboBox1.Text == "教师")
+            if (comboBox1.Text == "主任")
             {
                 if (textBox5.Text.Length != 6)
                 {
-                    MessageBox.Show("教工号由六位数字组成！");
+                    MessageBox.Show("主任工号由六位数字组成！");
                     return false;
                 }
             }
@@ -47,7 +47,7 @@ namespace StudentScoreManageSystem
             {
                 if (textBox5.Text.Length != 10)
                 {
-                    MessageBox.Show("学号由十位数字组成！");
+                    MessageBox.Show("员工号由十位数字组成！");
                     return false;
                 }
             }
@@ -89,12 +89,12 @@ namespace StudentScoreManageSystem
             string table;
             switch (comboBox1.SelectedItem.ToString())
             {
-                case "教师":
+                case "主任":
                     {
                         table = "teaLogin";
                         break;
                     }
-                case "学生":
+                case "员工":
                     {
                         table = "stuLogin";
                         break;

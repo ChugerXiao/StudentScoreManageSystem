@@ -36,10 +36,6 @@ namespace StudentScoreManageSystem
 
         private void BaseMessage_Load(object sender, EventArgs e)
         {
-            if (getIdentity(mid) == "teaLogin")
-            {
-                label3.Text = "教工号";
-            }
             OleDbConnection connection = new OleDbConnection();
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=usersInfo.accdb;Persist Security Info=False;";
             try

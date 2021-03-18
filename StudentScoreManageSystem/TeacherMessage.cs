@@ -43,7 +43,7 @@ namespace StudentScoreManageSystem
             }
             OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
-            command.CommandText = "SELECT teaLogin.fullName, sex, yearOld, teachSubject, partyOrNot FROM (stuLogin INNER JOIN teaLogin ON stuLogin.class = teaLogin.class) INNER JOIN teacher ON teaLogin.id = teacher.id WHERE stuLogin.id='" + mid + "'";
+            command.CommandText = "SELECT teaLogin.fullName, sex, yearOld, teaLogin.class, partyOrNot FROM (stuLogin INNER JOIN teaLogin ON stuLogin.class = teaLogin.class) INNER JOIN teacher ON teaLogin.id = teacher.id WHERE stuLogin.id='" + mid + "'";
             OleDbDataReader reader = command.ExecuteReader(); 
             while (reader.Read())
             {
@@ -61,7 +61,7 @@ namespace StudentScoreManageSystem
                 textBox3.Text = "";
                 textBox4.Text = "";
                 textBox5.Text = "";
-                MessageBox.Show("未查询到您班级教师情况！");
+                MessageBox.Show("未查询到您部门主任情况！");
             }
             else if (fullName.Count() == 1)
             {

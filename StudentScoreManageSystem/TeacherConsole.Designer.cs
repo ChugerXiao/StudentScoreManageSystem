@@ -55,7 +55,7 @@ namespace StudentScoreManageSystem
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(392, 101);
+            this.pictureBox2.Location = new System.Drawing.Point(186, 307);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(200, 200);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -66,7 +66,7 @@ namespace StudentScoreManageSystem
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(186, 307);
+            this.pictureBox3.Location = new System.Drawing.Point(392, 101);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(200, 200);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,9 +91,9 @@ namespace StudentScoreManageSystem
             this.label1.Font = new System.Drawing.Font("黑体", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(159, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(457, 34);
+            this.label1.Size = new System.Drawing.Size(457, 33);
             this.label1.TabIndex = 2;
-            this.label1.Text = "学生成绩管理系统    教师端";
+            this.label1.Text = "公司工资管理系统    主任端";
             // 
             // TeacherConsole
             // 
@@ -109,7 +109,7 @@ namespace StudentScoreManageSystem
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "TeacherConsole";
-            this.Text = "学生成绩管理系统";
+            this.Text = "公司工资管理系统";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

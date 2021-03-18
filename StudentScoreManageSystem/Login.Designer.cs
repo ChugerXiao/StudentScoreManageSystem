@@ -50,15 +50,15 @@ namespace StudentScoreManageSystem
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(371, 43);
             this.label1.TabIndex = 0;
-            this.label1.Text = "学生成绩管理系统";
+            this.label1.Text = "公司工资管理系统";
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "教师",
-            "学生"});
+            "主任",
+            "员工"});
             this.comboBox1.Location = new System.Drawing.Point(244, 153);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(176, 28);
@@ -163,7 +163,7 @@ namespace StudentScoreManageSystem
             this.MaximumSize = new System.Drawing.Size(640, 480);
             this.MinimumSize = new System.Drawing.Size(640, 480);
             this.Name = "Login";
-            this.Text = "学生成绩管理系统";
+            this.Text = "公司工资管理系统";
             this.ResumeLayout(false);
             this.PerformLayout();
 

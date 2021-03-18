@@ -49,7 +49,7 @@ namespace StudentScoreManageSystem
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(457, 33);
             this.label1.TabIndex = 7;
-            this.label1.Text = "学生成绩管理系统    学生端";
+            this.label1.Text = "公司工资管理系统    员工端";
             // 
             // pictureBox4
             // 
@@ -109,7 +109,7 @@ namespace StudentScoreManageSystem
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "StudentConsole";
-            this.Text = "学生成绩管理系统";
+            this.Text = "公司工资管理系统";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

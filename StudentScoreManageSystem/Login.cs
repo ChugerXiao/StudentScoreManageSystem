@@ -42,12 +42,12 @@ namespace StudentScoreManageSystem
             string table;
             switch (comboBox1.SelectedItem.ToString())
             {
-                case "教师":
+                case "主任":
                     {
                         table = "teaLogin";
                         break;
                     }
-                case "学生":
+                case "员工":
                     {
                         table = "stuLogin";
                         break;
@@ -84,7 +84,7 @@ namespace StudentScoreManageSystem
                 if (textBox2.Text == reader.GetString(0))
                 {
                     MessageBox.Show("登录成功！");
-                    if (comboBox1.SelectedItem.ToString() == "教师")
+                    if (comboBox1.SelectedItem.ToString() == "主任")
                     {
                         Form manageConsole = new TeacherConsole(reader.GetString(1));
                         manageConsole.Show();

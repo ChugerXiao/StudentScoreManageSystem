@@ -52,7 +52,7 @@ namespace StudentScoreManageSystem
             string sql;
             if (getIdentity(mid) == "student")
             {
-                sql = "SELECT subject as 科目, score as 成绩, time as 考试时间 FROM scores WHERE id='" + mid + "'";
+                sql = "SELECT subject as 类别, score as 工资, time as 评定时间 FROM scores WHERE id='" + mid + "'";
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandText = "SELECT fullName, class FROM stuLogin WHERE id='" + mid + "'";
@@ -60,7 +60,7 @@ namespace StudentScoreManageSystem
                 bool exist = reader.Read();
                 if (!exist)
                 {
-                    MessageBox.Show("您的数据不存在，请联系老师处理。");
+                    MessageBox.Show("您的数据不存在，请联系技术部处理。");
                     Dispose();
                 }
                 else
@@ -72,7 +72,7 @@ namespace StudentScoreManageSystem
             }
             else
             {
-                sql = "SELECT stuLogin.fullName as 姓名, stuLogin.class as 班级, subject as 科目, score as 成绩, time as 考试时间 FROM (scores INNER JOIN stuLogin ON scores.id = stuLogin.id) LEFT JOIN teaLogin ON stuLogin.class = teaLogin.class WHERE teaLogin.id='" + mid + "'";
+                sql = "SELECT stuLogin.fullName as 姓名, stuLogin.class as 部门, subject as 类别, score as 工资, time as 评定时间 FROM (scores INNER JOIN stuLogin ON scores.id = stuLogin.id) LEFT JOIN teaLogin ON stuLogin.class = teaLogin.class WHERE teaLogin.id='" + mid + "'";
             }
             OleDbDataAdapter adapter = new OleDbDataAdapter(sql, connection);
             dataSet = new DataSet();
@@ -91,13 +91,13 @@ namespace StudentScoreManageSystem
             if (getIdentity(mid) == "teacher")
             {
                 sName = dataSet.Tables[0].Rows[e.RowIndex]["姓名"].ToString();
-                sClass = dataSet.Tables[0].Rows[e.RowIndex]["班级"].ToString();
+                sClass = dataSet.Tables[0].Rows[e.RowIndex]["部门"].ToString();
             }
             textBox1.Text = sName;
             textBox2.Text = sClass;
-            textBox3.Text = dataSet.Tables[0].Rows[e.RowIndex]["科目"].ToString();
-            textBox4.Text = dataSet.Tables[0].Rows[e.RowIndex]["成绩"].ToString();
-            textBox5.Text = dataSet.Tables[0].Rows[e.RowIndex]["考试时间"].ToString();
+            textBox3.Text = dataSet.Tables[0].Rows[e.RowIndex]["类别"].ToString();
+            textBox4.Text = dataSet.Tables[0].Rows[e.RowIndex]["工资"].ToString();
+            textBox5.Text = dataSet.Tables[0].Rows[e.RowIndex]["评定时间"].ToString();
         }
     }
 }

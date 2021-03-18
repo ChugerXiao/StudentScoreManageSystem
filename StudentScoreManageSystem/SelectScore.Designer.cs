@@ -86,7 +86,7 @@ namespace StudentScoreManageSystem
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "班级";
+            this.label2.Text = "部门";
             // 
             // textBox2
             // 
@@ -105,7 +105,7 @@ namespace StudentScoreManageSystem
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 1;
-            this.label3.Text = "科目";
+            this.label3.Text = "类别";
             // 
             // textBox3
             // 
@@ -124,7 +124,7 @@ namespace StudentScoreManageSystem
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 1;
-            this.label4.Text = "成绩";
+            this.label4.Text = "工资";
             // 
             // textBox4
             // 
@@ -174,7 +174,7 @@ namespace StudentScoreManageSystem
             this.MaximumSize = new System.Drawing.Size(730, 510);
             this.MinimumSize = new System.Drawing.Size(730, 510);
             this.Name = "SelectScore";
-            this.Text = "成绩查询";
+            this.Text = "工资查询";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

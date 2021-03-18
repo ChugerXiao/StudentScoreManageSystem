@@ -56,12 +56,12 @@ namespace StudentScoreManageSystem
                 Dispose();
             }
             string sql;
-            sql = "SELECT stuLogin.id as 学号, stuLogin.fullName as 姓名 FROM teaLogin INNER JOIN stuLogin ON teaLogin.class = stuLogin.class WHERE teaLogin.id='" + mid + "'";
+            sql = "SELECT stuLogin.id as 工号, stuLogin.fullName as 姓名 FROM teaLogin INNER JOIN stuLogin ON teaLogin.class = stuLogin.class WHERE teaLogin.id='" + mid + "'";
             OleDbDataAdapter adapter = new OleDbDataAdapter(sql, connection);
             dataSet = new DataSet();
             adapter.Fill(dataSet);
             DataTable table = dataSet.Tables[0];
-            table.Columns.Add("成绩");
+            table.Columns.Add("工资");
             dataGridView1.DataSource = table;
             dataGridView1.Columns[0].ReadOnly = true;
             dataGridView1.Columns[1].ReadOnly = true;
@@ -72,7 +72,7 @@ namespace StudentScoreManageSystem
         {
             if (textBox1.Text == "" || textBox2.Text == "")
             {
-                MessageBox.Show("请输入考试时间与科目！");
+                MessageBox.Show("请输入评定时间与工资类别！");
                 return;
             }
             for (int index = 0; index < dataGridView1.Rows.Count; index++)
@@ -82,7 +82,7 @@ namespace StudentScoreManageSystem
                 string sql = "INSERT INTO scores(id, subject, score, [time]) VALUES ('" + id + "', '" + textBox2.Text + "', '" + score + "', '" + textBox1.Text + "')";
                 ExecuteSql(sql);
             }
-            MessageBox.Show("成绩提交成功！");
+            MessageBox.Show("工资发放成功！");
             Dispose();
             // INSERT INTO scores(id, subject, score, [time]) VALUES ('2021010101', '政治', '77', '2021-3-12')
         }
